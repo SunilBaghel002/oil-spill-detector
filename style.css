@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ocean {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+.write{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.ball{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+.white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.ball1{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+.main{
+    width: 100vw;
+    height: 95vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.india {
+    width: 80vw;
+    height: 90vh;
+    position: relative;
+    /* margin-left: 80px; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4/3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.area {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    /* background-color: azure; */
+    border-radius: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.area1 {
+    top: 50vh;
+    left: 24vw;
+    animation-name: move1;
+    animation-duration: 75s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+.area2 {
+    top: 60vh;
+    left: 45vw;
+    animation-name: move2;
+    animation-duration: 60s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+
+}
+
+.area3 {
+    top: 23vh;
+    left: 5vw;
+    animation-name: move2;
+    animation-duration: 90s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+
+}
+
+.area4 {
+    top: 35vh;
+    left: 63vw;
+    animation-name: move4;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+
+}
+
+.area5 {
+    top: 60vh;
+    left: 3vw;
+    animation-name: move3;
+    animation-duration: 105s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+
+}
+
+.area6 {
+    top: 69vh;
+    left: 48vw;
+    animation-name: move3;
+    animation-duration: 45s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+
+}
+
+.area7 {
+    top: 45vh;
+    left: 71vw;
+    animation-name: move1;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+.hidden {
+    position: relative;
+    background-color: rgb(38, 219, 189);
+    color: rgb(9, 12, 12);
+    width: 50px;
+    bottom: 40px;
+    font-size: large;
+    font-weight: 700;
+    right: 10px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 7px;
+    transition: all ease 0.5s;
+}
+
+.info1 {
+    width: 170px;
+    height: 100vh;
+    position: relative;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content {
+    width: 160px;
+    height: 160px;
+    /* background-color: rgb(53, 15, 190); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid yellow;
+}
+
+.info2 {
+    width: 170px;
+    height: 100vh;
+    position: relative;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.click {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    color: white;
+    font-size: 10px;
+    /* padding: 5px; */
+    /* border: 1px solid rgb(165, 218, 20); */
+    /* border-radius: 2px; */
+    opacity: 1;
+}
+
+@keyframes move1 {
+    0% {}
+
+    /* 75% {
+        background-color: rgb(4, 4, 107);
+    }
+
+    90% {
+        background-color: azure;
+        opacity: 1;
+    } */
+
+    100% {
+        transform: translate(-200px, -100px);
+    }
+}
+
+@keyframes move2 {
+    0% {}
+
+    /* 75% {
+        background-color: rgb(3, 3, 104);
+    }
+
+    90% {
+        background-color: azure;
+    } */
+
+    100% {
+        transform: translate(200px, 150px);
+    }
+}
+
+@keyframes move3 {
+    0% {}
+
+    /* 75% {
+        background-color: rgb(4, 4, 116);
+    }
+
+    90% {
+        background-color: azure;
+    } */
+
+    100% {
+        transform: translate(200px, -50px);
+    }
+}
+
+@keyframes move4 {
+    0% {}
+
+    /* 75% {
+        background-color: rgb(3, 3, 94);
+    }
+
+    90% {
+        background-color: azure;
+    } */
+
+    100% {
+        transform: translate(-200px, 100px);
+    }
+}
